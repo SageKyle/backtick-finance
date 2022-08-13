@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon/favicon-16x16.png">
+    <link rel="manifest" href="asset/favicon/site.webmanifest">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="src/js/app.js" defer></script>
+    <title>Backtick Finance</title>
+</head>
+<body class="dark-theme">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="/asset/img/backtick-logo.svg" alt="Backtick Finance" class="logo-img">
+        </div>
+        <!-- Header Navigation -->
+        <nav class="navbar">
+            <a href="#" class="navbar__link">home</a>
+            <a href="#" class="navbar__link">about</a>
+            <a href="#" class="navbar__link">contact</a>
+        </nav>
+        <div class="navbar__action">
+            <div class="theme-toggle">
+                <img src="/asset/img/lightbulb.svg" aria-hidden="true" alt="" class="light-mode">
+                <img src="/asset/img/lightbulb-slash.svg" class="dark-mode" style="display: none;" alt="">
+            </div>
+            <div class="cta">sign up</div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="primary-heading">Profitability on the rise</h1>
+                <p class="paragraph hero__text--description">A broker that supports your financial goal</p>
+                <div class="cta hero__cta">start trading</div>
+            </div>
+            <div class="hero__img">
+                <img src="/asset/img/platforms.png" alt="">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="features__heading">
+                <h2 class="secondary-heading">The latest from our broker</h2>
+                <p class="paragraph">New features, latest webinars and more...</p>
+            </div>
+            <!-- Features Card Grid Container -->
+            <div class="features__main-content grid">
+                <!-- Feature Item -->
+                <div class="feature" data-content-type="trade">
+                    <h4 class="card-heading">chf jpy</h4>
+                    <p class="paragraph card-paragraph">trade the best currency pairs.</p>
+                    <img src="/asset/img/line.png" alt="trading line indicator" class="feature__img">
+                </div>
+                <!-- Feature Item -->
+                <div class="feature" data-content-type="security">
+                    <h4 class="card-heading">secure account</h4>
+                    <p class="paragraph card-paragraph">You can now use your fingerprint to access your mobile app</p>
+                    <div class="feature__icon">
+                        <!-- Feature Item SVG Icon -->
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="sc-ezWOiH gOzdEB" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256.12 245.96c-13.25 0-24 10.74-24 24 1.14 72.25-8.14 141.9-27.7 211.55-2.73 9.72 2.15 30.49 23.12 30.49 10.48 0 20.11-6.92 23.09-17.52 13.53-47.91 31.04-125.41 29.48-224.52.01-13.25-10.73-24-23.99-24zm-.86-81.73C194 164.16 151.25 211.3 152.1 265.32c.75 47.94-3.75 95.91-13.37 142.55-2.69 12.98 5.67 25.69 18.64 28.36 13.05 2.67 25.67-5.66 28.36-18.64 10.34-50.09 15.17-101.58 14.37-153.02-.41-25.95 19.92-52.49 54.45-52.34 31.31.47 57.15 25.34 57.62 55.47.77 48.05-2.81 96.33-10.61 143.55-2.17 13.06 6.69 25.42 19.76 27.58 19.97 3.33 26.81-15.1 27.58-19.77 8.28-50.03 12.06-101.21 11.27-152.11-.88-55.8-47.94-101.88-104.91-102.72zm-110.69-19.78c-10.3-8.34-25.37-6.8-33.76 3.48-25.62 31.5-39.39 71.28-38.75 112 .59 37.58-2.47 75.27-9.11 112.05-2.34 13.05 6.31 25.53 19.36 27.89 20.11 3.5 27.07-14.81 27.89-19.36 7.19-39.84 10.5-80.66 9.86-121.33-.47-29.88 9.2-57.88 28-80.97 8.35-10.28 6.79-25.39-3.49-33.76zm109.47-62.33c-15.41-.41-30.87 1.44-45.78 4.97-12.89 3.06-20.87 15.98-17.83 28.89 3.06 12.89 16 20.83 28.89 17.83 11.05-2.61 22.47-3.77 34-3.69 75.43 1.13 137.73 61.5 138.88 134.58.59 37.88-1.28 76.11-5.58 113.63-1.5 13.17 7.95 25.08 21.11 26.58 16.72 1.95 25.51-11.88 26.58-21.11a929.06 929.06 0 0 0 5.89-119.85c-1.56-98.75-85.07-180.33-186.16-181.83zm252.07 121.45c-2.86-12.92-15.51-21.2-28.61-18.27-12.94 2.86-21.12 15.66-18.26 28.61 4.71 21.41 4.91 37.41 4.7 61.6-.11 13.27 10.55 24.09 23.8 24.2h.2c13.17 0 23.89-10.61 24-23.8.18-22.18.4-44.11-5.83-72.34zm-40.12-90.72C417.29 43.46 337.6 1.29 252.81.02 183.02-.82 118.47 24.91 70.46 72.94 24.09 119.37-.9 181.04.14 246.65l-.12 21.47c-.39 13.25 10.03 24.31 23.28 24.69.23.02.48.02.72.02 12.92 0 23.59-10.3 23.97-23.3l.16-23.64c-.83-52.5 19.16-101.86 56.28-139 38.76-38.8 91.34-59.67 147.68-58.86 69.45 1.03 134.73 35.56 174.62 92.39 7.61 10.86 22.56 13.45 33.42 5.86 10.84-7.62 13.46-22.59 5.84-33.43z"></path></svg>
+                    </div>
+                    <img src="/asset/img/security.png" alt="passcode and security now available for the mobile app" class="feature__img">
+                </div>
+                <!-- Feature Item -->
+                <div class="feature" data-content-type="webinar">
+                    <h4 class="card-heading">webinar</h4>
+                    <p class="paragraph card-paragraph">Trading strategy "Tripple Ricochet"</p>
+                    <div class="feature__icon">
+                        <!-- Feature Item SVG Icon -->
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="sc-gicCDI iOVtXI" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path></svg>
+                    </div>
+                </div>
+                <!-- Feature Item -->
+                <div class="feature" data-content-type="education">
+                    <h4 class="card-heading">education</h4>
+                    <p class="paragraph card-paragraph">How to start trading on the platform</p>
+                    <div class="feature__icon">
+                        <!-- Feature Item SVG Icon -->
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="sc-gicCDI iOVtXI" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path></svg>
+                    </div>
+                </div>
+                <!-- Feature Item -->
+                <div class="feature" data-content-type="anniversary">
+                    <h4 class="card-heading">anniversary</h4>
+                    <p class="paragraph card-paragraph">Our broker has been trailblazing for the past 5 years...</p>
+                </div>
+            </div>
+        </section>
+        <!-- Design Section -->
+        <section class="design">
+            <div class="design__heading">
+                <h2 class="secondary-heading">smooth experiences on all your devices</h2>
+                <p class="paragraph">Whether you prefer <strong>trading at your desk or on the go</strong> - Backtick Finance has got you covered.</p>
+            </div>
+            <!-- Design Image/Cards Container  -->
+            <div class="design__main">
+                <div class="design__main--img">
+                    <img src="/asset/img/devices.png" alt="trade on your smartphone with Backtick Finance">
+                </div>
+                <!-- Rating Component -->
+                <article class="feedback">
+                    <p class="paragraph feedback__description">The custom-built platform has been adapted to any device you may choose and switching is 100% seamless.</p>
+                    <div class="feedback__main">
+                        <!-- First Rating Card -->
+                        <div class="feedback__card dark-card">
+                            <div class="feedback__rating">
+                                <p class="feedback__rating--number color-white">5.0</p>
+                                <div class="feedback__rating--info">
+                                    <div class="feedback__rating--star">
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        
+                                    </div>
+                                    <p class="feedback__rating--user color-white">Another User</p>
+                                </div>
+                            </div>
+                            <p class="paragraph feedback__rating--comment color-white">This is a clone of this <a href="http://https://halo-broker.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: hsl(205, 100%, 50%);">site</a> Designed by Sage Paul with just HTML, CSS and vanilla Javascript</p>
+                        </div>
+                        <!-- Second Rating Card -->
+                        <div class="feedback__card dark-card">
+                            <div class="feedback__rating">
+                                <p class="feedback__rating--number color-white">5.0</p>
+                                <div class="feedback__rating--info">
+                                    <div class="feedback__rating--star">
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                        <!-- Rating Star SVG Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+                                       <!-- Rating Half-Star SVG Icon -->
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="sc-lbxAil LpxxH" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"></path></svg>
+                                        
+                                    </div>
+                                    <p class="feedback__rating--user color-white">Sage Paul</p>
+                                </div>
+                            </div>
+                            <p class="paragraph feedback__rating--comment color-white">This is the best trading platform I've ever seen. Thank you so much!</p>
+                        </div>
+                    </div>
+                    
+                </article>
+            </div>
+        </section>
+        <!-- Download Platforms Section -->
+        <section class="download">
+            <!-- Download on Desktop Main Container -->
+            <div class="download__desktop">
+                <h4 class="download__heading">desktop</h4>
+                <!-- Download on Desktop Apps Container -->
+                <div class="download__desktop--apps">
+                    <!-- Download on Desktop First Card -->
+                    <div class="download__desktop--card dark-card">
+                        <img src="/asset/img/metatrader.png" alt="trade on metatrader 4" class="download__img">
+                        <div class="download__detail">
+                            <p class="download__detail--info color-white">Available On</p>
+                            <h4 class="card-heading color-white">MetaTrader4</h4>
+                        </div>
+                    </div>
+                    <!-- Dwonload on Desktop Second Card -->
+                    <div class="download__desktop--card dark-card">
+                        <img src="/asset/img/apple.png" alt="also suppots macos" class="download__img">
+                        <div class="download__detail">
+                            <p class="download__detail--info color-white">Download App for</p>
+                            <h4 class="card-heading color-white">MacOs</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Download on Mobile & Downloads Count Container -->
+            <div class="download__mobile">
+                <!-- Download on Mobile Main Container -->
+                <div class="download__mobile--main">
+                    <h4 class="download__heading">mobile</h4>
+                    <!-- Download on Moblie Apps Container -->
+                    <div class="download__mobile--apps">
+                        <!-- Download on Mobile First App Card -->
+                        <div class="download__mobile--card dark-card">
+                            <img src="/asset/img/playstore.png" alt="you can download our app on playstore" class="download__img">
+                        </div>
+                        <!-- Download on Mobile Second App Card -->
+                        <div class="download__mobile--card dark-card">
+                            <img src="/asset/img/apple.png" alt="you can download our app on app store" class="download__img">    
+                        </div>
+                    </div>
+                </div>
+                <!-- Downloads Count Container -->
+                <div class="download__mobile--downloads">
+                    <h4 class="download__heading">apps download</h4>
+                    <h4 class="secondary-heading">12M+</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <!-- Benefits Intro Text -->
+            <div class="benefits__text">
+                <h4 class="secondary-heading">a platform for all your needs</h4>
+                <p class="paragraph">These features will help you to get the most out of your business</p>
+                <div class="cta">Start Trading - Its Free</div>
+            </div>
+            <!-- Benefits Cards Container -->
+            <div class="benefits__card--container grid">
+                <!-- Benefits Item -->
+                <div class="benefits__card dark-card color-white">
+                    <div class="benefits__card--icon">
+                        <!-- Benefits Item SVG Icon -->
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h4 class="card-heading benefits__card--title">risk-free trade</h4>
+                    <p class="paragraph benefits__card--description">Exlore the platform and test strategies freely</p>
+                </div>
+                <!-- Benefits Item -->
+                <div class="benefits__card dark-card color-white">
+                    <div class="benefits__card--icon">
+                        <!-- Benefits Item SVG Icon -->
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                    <h4 class="card-heading benefits__card--title">marketplace</h4>
+                    <p class="paragraph benefits__card--description">Customize the platform with unique add-ons to elevate your trading</p>
+                </div>
+                <!-- Benefits Item -->
+                <div class="benefits__card dark-card color-white">
+                    <div class="benefits__card--icon">
+                        <!-- Benefits Item SVG Icon -->
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg>
+                    </div>
+                    <h4 class="card-heading benefits__card--title">demo account</h4>
+                    <p class="paragraph benefits__card--description">Replenishable $10,000 for practice and learninig</p>
+                </div>
+                <!-- Benefits Item -->
+                <div class="benefits__card dark-card color-white">
+                    <div class="benefits__card--icon">
+                        <!-- Benefits Item SVG Icon -->
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>
+                    </div>
+                    <h4 class="card-heading benefits__card--title">personal manager</h4>
+                    <p class="paragraph benefits__card--description">Get Exclusive one-on-one support from a trading expert</p>
+                </div>
+            </div>
+        </section>
+        <!-- Supported Payment Platforms -->
+        <section class="platforms">
+            <!-- Platforms Intro Text -->
+            <div class="platform__text">
+                <h2 class="secondary-heading">No Limits. No Fees. No Holdback.</h2>
+                <h4 class="platform__text--description">Quick and Easy Deposits and Withdrawals</h4>
+            </div>
+            <!-- Platforms Grid Container -->
+            <div class="platform__items grid">
+                <img src="/asset/img/visa.png" alt="you can make and receive payments with visa" class="platform__img">
+                
+                <img src="/asset/img/mastercard.png" alt="you can make and receive payments with mastercard" class="platform__img">
+                
+                <img src="/asset/img/neteller.png" alt="you can make and receive payments with neteller" class="platform__img">
+                
+                <img src="/asset/img/webmoney.png" alt="you can make and receive payments with webmoney" class="platform__img">
+                
+                <img src="/asset/img/skrill.png" alt="you can make and receive payments with skrill" class="platform__img">
+                
+                <img src="/asset/img/paypal.png" alt="you can make and receive payments with paypal" class="platform__img">
+                
+            </div>
+        </section>
+        <!-- Proof/Awards Section -->
+        <section class="proof">
+            <div class="proof__text">
+                <h2 class="secondary-heading">5 Years of Excellence</h2>
+                <p class="paragraph proof__text--description">An industry trailblazer since 2014, our broker has many achievements and accolades to show for itself.</p>
+            </div>
+            <div class="proof__cards--container grid">
+                <div class="proof__card dark-card" data-content-type="partnership">
+                    <h4 class="card-heading">partnership</h4>
+                    <p class="paragraph proof__card--description">One of the world's top Developers Sage Paul (Nigeria) is now our Partner.</p>
+                </div>
+
+                <div class="proof__card dark-card" data-content-type="proof-anniversary">
+                    <h4 class="card-heading">ANNIVERSARY</h4>
+                    <p class="paragraph proof__card--description">This year we are 5 Years old and have organized a tournament with many awards and a record prize pool of $1,000,000.</p>
+                </div>
+
+                <div class="proof__card dark-card" data-content-type="award">
+                    <h4 class="card-heading">AWARD</h4>
+                    <p class="paragraph proof__card--description">"Best Trading Plaform" The Forex Awards 2019</p>
+                </div>
+            </div>                
+            <div class="cta" style="margin: 4rem auto;">Start Trading - Its Free</div>
+
+        </section>
+        <!-- Footer Navigation -->
+        <article class="navigation grid">
+            <section class="navigation__section">
+                <h4 class="card-heading">Backtick Finance</h4>
+                <a href="#" class="navigation__section--link">about the company</a>
+                <a href="#" class="navigation__section--link">support</a>
+                <a href="#" class="navigation__section--link">affiliate program</a>
+            </section>
+            <section class="navigation__section">
+                <h4 class="card-heading">education</h4>
+                <a href="#" class="navigation__section--link">strategies</a>
+                <a href="#" class="navigation__section--link">webinars</a>
+                <a href="#" class="navigation__section--link">forex webinars</a>
+            </section>
+            <section class="navigation__section">
+                <h4 class="card-heading">analytics</h4>
+                <a href="#" class="navigation__section--link">trading calendars</a>
+                <a href="#" class="navigation__section--link">trading strategies</a>
+            </section>
+            <section class="social__card--container">
+                <div class="social__card facebook">
+                    <div class="social__card--icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="sc-bWXABl gjUtxg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                    </div>
+                    <h4 class="color-white card-heading">1M</h4>
+                    <p class="paragraph">Facebook</p>
+                </div>
+                <div class="social__card youtube">
+                    <div class="social__card--icon"><i class="fa-brands fa-youtube"></i></div>
+                    <h4 class="color-white card-heading">1M</h4>
+                    <p class="paragraph">Youtube</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer class="footer color-white">
+        <a href="#" class="paragraph legal">legal information</a>
+        <p class="designer">Made by <a href="https://twitter.com/Ominyi_Sage" target="_blank" rel="noreferrer" class="designer-bio">Sage Paul</a></p>
+    </footer>
+    
+</body>
+</html>
