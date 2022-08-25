@@ -24,11 +24,19 @@
 <body class="dark-theme">
     <!-- Header Section -->
     <header class="header">
+        <div class="navbar__toggle">
+            <div class="navbar__open">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </div>
+            <div class="navbar__close hidden">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+            </div>
+        </div>
         <div class="logo">
             <img src="/asset/img/backtick-logo.svg" alt="Backtick Finance" class="logo-img">
         </div>
         <!-- Header Navigation -->
-        <nav class="navbar">
+        <nav class="navbar hidden">
             <a href="#" class="navbar__link">home</a>
             <a href="#" class="navbar__link">about</a>
             <a href="#" class="navbar__link">contact</a>
@@ -97,7 +105,7 @@
                     </div>
                 </div>
                 <!-- Feature Item -->
-                <div class="feature" data-content-type="anniversary">
+                <div class="feature anniversary" data-content-type="anniversary">
                     <h4 class="card-heading">anniversary</h4>
                     <p class="paragraph card-paragraph">Our broker has been trailblazing for the past 5 years...</p>
                 </div>
@@ -184,9 +192,9 @@
                             <h4 class="card-heading color-white">MetaTrader4</h4>
                         </div>
                     </div>
-                    <!-- Dwonload on Desktop Second Card -->
+                    <!-- Download on Desktop Second Card -->
                     <div class="download__desktop--card dark-card">
-                        <img src="/asset/img/apple.png" alt="also suppots macos" class="download__img">
+                        <img src="/asset/img/apple.png" alt="also supports macos" class="download__img">
                         <div class="download__detail">
                             <p class="download__detail--info color-white">Download App for</p>
                             <h4 class="card-heading color-white">MacOs</h4>
@@ -199,7 +207,7 @@
                 <!-- Download on Mobile Main Container -->
                 <div class="download__mobile--main">
                     <h4 class="download__heading">mobile</h4>
-                    <!-- Download on Moblie Apps Container -->
+                    <!-- Download on Mobile Apps Container -->
                     <div class="download__mobile--apps">
                         <!-- Download on Mobile First App Card -->
                         <div class="download__mobile--card dark-card">
@@ -212,10 +220,10 @@
                     </div>
                 </div>
                 <!-- Downloads Count Container -->
-                <div class="download__mobile--downloads">
-                    <h4 class="download__heading">apps download</h4>
-                    <h4 class="secondary-heading">12M+</h4>
-                </div>
+            </div>
+            <div class="download__Count">
+                <h4 class="download__heading">apps download</h4>
+                <h4 class="secondary-heading">12M+</h4>
             </div>
         </section>
         <!-- Benefits Section -->

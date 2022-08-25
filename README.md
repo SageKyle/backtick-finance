@@ -45,7 +45,7 @@ This project
 
 ### Continued Learning
 
-After this, my goal is to move on to the nesxt step in my learning process which is to learn React JS.
+After this, my goal is to move on to the next step in my learning process which is to learn React JS.
 
 
 ## Author
