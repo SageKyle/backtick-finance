@@ -205,9 +205,10 @@ main {
     width: 100%;
     padding: 0 var(--big-size);
 }
+
 /* Hero Section */
 .hero {
-    height: 70rem;
+    max-height: 70rem;
     width: 100%;
     display: flex;
     -webkit-box-pack: justify;
@@ -441,7 +442,7 @@ main {
 }
 
 .download__count .download__heading {
-    margin-bottom: var(--small-size);
+    margin-bottom: var(--tiny-size);
 }
 
 /* Features section */
@@ -570,7 +571,7 @@ main {
 
 [data-content-type= "award"] {
     background-image: url('/asset/img/award.png');
-    background-position-x: 200%;
+    background-position-x: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
@@ -653,6 +654,7 @@ main {
 }
 
 /* Media queries */
+
 /* 1024px */
 @media screen and (max-width: 64em) {
     .features__main-content {
@@ -751,6 +753,14 @@ main {
 
 /* 750px */
 @media screen and (max-width: 46.88em) {
+    .hero {
+        margin-top: 0;
+    }
+
+    .features {
+        margin-top: var(--small-size);
+    }
+
     .download__desktop--apps {
         grid-template-columns: 1fr;
         gap: 0;

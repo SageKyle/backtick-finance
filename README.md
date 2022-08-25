@@ -1,5 +1,5 @@
 # Backtick Finance
-A clone of this [broker site](https://halo-broker.vercel.app/) 
+A clone of this [broker site](https://halo-broker.vercel.app/) initially designed by Samuel Jarvis
 
 
 ## Table of contents
@@ -11,6 +11,7 @@ A clone of this [broker site](https://halo-broker.vercel.app/)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued Learning](#Continued-Learning)
+- [Screenshots](#screenshots)
 - [Author](#author)
 - [Useful Resources](#useful-resources)
 
@@ -41,12 +42,23 @@ Although I can't call myself a designer or even a CSS professional, I can now sa
 
 ### What I learned
 
-This project 
+Through this project I learned how to use and also style the html `data-` attribute.
+
+## Screenshots
+
+- Desktop Layout ![](asset/img/desktop-layout.png)
+
+- Tablet Layout ![](asset/img/tablet-layout.png)
+
+- Mobile Layout ![](asset/img/mobile-layout.png)
+
+- Active States ![](asset/img/active-states.png)
+
+- Navigation ![](asset/img/navigation.png)
 
 ### Continued Learning
 
 After this, my goal is to move on to the next step in my learning process which is to learn React JS.
-
 
 ## Author
 
