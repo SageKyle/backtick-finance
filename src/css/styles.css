@@ -763,6 +763,10 @@ main {
         margin-top: 0;
     }
 
+    .benefits__card--container {
+        grid-template-columns: 1fr;
+    }
+
     .features__main-content {
         grid-template-columns: 1fr;
     }
